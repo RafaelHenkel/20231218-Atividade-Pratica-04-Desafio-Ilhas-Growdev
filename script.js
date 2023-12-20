@@ -26,43 +26,72 @@
 // GC$ 5,00 -> 0
 // GC$ 1,00 -> 2
 
+//-----------PSEUDO CODIGO-----------
 
+// criar a variavel para ser digitado a quantidade de GC$
+// valor
+// criar variavel para as notas
+// 50-10-5-1
+
+// Criar loop
+// enquanto o valor ser > 0 vai ser loopado
+
+// se o VALOR for maior ou = a 50
+// adiciona 1 as notas 50 e diminui o VALOR em 50
+// loopa
+
+// se o VALOR for maior ou = a 10
+// adiciona 1 as notas 10 e diminui o VALOR em 10
+// loopa
+
+// se o VALOR for maior ou = a 5
+// adiciona 1 as notas 5 e diminui o VALOR em 5
+// loopa
+
+// se o VALOR for maior ou = a 1
+// adiciona 1 as notas 1 e diminui o VALOR em 1
+// loopa
+
+// verifica se o VALOR é maior que 0
+// se for maior que 0 imprime os resultados
+
+// se não  for maior que 0 imprime "Digite um valor positivo"
 
 //-----------FOR-----------
 
 let valor = parseInt(prompt("Digite o valor que deseja retirar:"));
-
 let notas50 = 0;
 let notas10 = 0;
 let notas5 = 0;
 let notas1 = 0;
 
-for (; valor>0;){
-    if(valor >=50){
-        notas50++
-        valor-=50
-    }else if(valor >=10){
-        notas10++
-        valor-=10
-    }else if(valor >=5){
-        notas5++
-        valor-=5
-    }else{
-        notas1++
-        valor-=1
-    }
-
+for (; valor > 0; ) {
+  if (valor >= 50) {
+    notas50++;
+    valor -= 50;
+  } else if (valor >= 10) {
+    notas10++;
+    valor -= 10;
+  } else if (valor >= 5) {
+    notas5++;
+    valor -= 5;
+  } else {
+    notas1++;
+    valor -= 1;
+  }
 }
-console.log("GC$ 50,00 ->", notas50);
-console.log("GC$ 10,00 ->", notas10);
-console.log("GC$ 5,00 ->", notas5);
-console.log("GC$ 1,00 ->", notas1);
-
+if (valor > 0) {
+  console.log("GC$ 50,00 ->", notas50);
+  console.log("GC$ 10,00 ->", notas10);
+  console.log("GC$ 5,00 ->", notas5);
+  console.log("GC$ 1,00 ->", notas1);
+} else {
+  console.log("Digite um valor positivo");
+}
 
 //-----------FOR2-----------
 
 // let valor = parseInt(prompt("Digite o valor que deseja retirar:"));
-
 // let notas50 = 0;
 // let notas10 = 0;
 // let notas5 = 0;
@@ -84,7 +113,6 @@ console.log("GC$ 1,00 ->", notas1);
 // console.log("GC$ 10,00 ->", notas10);
 // console.log("GC$ 5,00 ->", notas5);
 // console.log("GC$ 1,00 ->", notas1);
-
 
 //-----------WHILE-----------
 
@@ -120,4 +148,24 @@ console.log("GC$ 1,00 ->", notas1);
 // console.log("GC$ 5,00 ->", notas5);
 // console.log("GC$ 1,00 ->", notas1);
 
+//-----------ARRAY-----------
 
+// let calcularNotas = () => {
+//     let valor = parseInt(prompt("Digite o valor que deseja retirar:"));
+//     let notas = [50, 10, 5, 1];
+//     let quantidadeNotas = [0, 0, 0, 0];
+
+//     for (let i = 0; i < notas.length; i++) {
+//         if (valor >= notas[i]) {
+//             quantidadeNotas[i] = Math.floor(valor / notas[i]);
+//             valor = valor % notas[i];
+//         }
+//     }
+
+//     console.log("GC$ 50,00 ->", quantidadeNotas[0]);
+//     console.log("GC$ 10,00 ->", quantidadeNotas[1]);
+//     console.log("GC$ 5,00 ->", quantidadeNotas[2]);
+//     console.log("GC$ 1,00 ->", quantidadeNotas[3]);
+// }
+
+// calcularNotas();
