@@ -120,24 +120,4 @@ console.log("GC$ 1,00 ->", notas1);
 // console.log("GC$ 5,00 ->", notas5);
 // console.log("GC$ 1,00 ->", notas1);
 
-//-----------ARRAY-----------
 
-// let calcularNotas = () => {
-//     let valor = parseInt(prompt("Digite o valor que deseja retirar:"));
-//     let notas = [50, 10, 5, 1];
-//     let quantidadeNotas = [0, 0, 0, 0];
-
-//     for (let i = 0; i < notas.length; i++) {
-//         if (valor >= notas[i]) {
-//             quantidadeNotas[i] = Math.floor(valor / notas[i]);
-//             valor = valor % notas[i];
-//         }
-//     }
-
-//     console.log("GC$ 50,00 ->", quantidadeNotas[0]);
-//     console.log("GC$ 10,00 ->", quantidadeNotas[1]);
-//     console.log("GC$ 5,00 ->", quantidadeNotas[2]);
-//     console.log("GC$ 1,00 ->", quantidadeNotas[3]);
-// }
-
-// calcularNotas();
