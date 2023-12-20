@@ -26,6 +26,8 @@
 // GC$ 5,00 -> 0
 // GC$ 1,00 -> 2
 
+
+
 //-----------FOR-----------
 
 let valor = parseInt(prompt("Digite o valor que deseja retirar:"));
@@ -35,22 +37,27 @@ let notas10 = 0;
 let notas5 = 0;
 let notas1 = 0;
 
-for (; valor >= 50; valor -= 50) {
-  notas50++;
-}
-for (; valor >= 10; valor -= 10) {
-  notas10++;
-}
-for (; valor >= 5; valor -= 5) {
-  notas5++;
-}
-for (; valor >= 1; valor -= 1) {
-  notas1++;
+for (; valor>0;){
+    if(valor >=50){
+        notas50++
+        valor-=50
+    }else if(valor >=10){
+        notas10++
+        valor-=10
+    }else if(valor >=5){
+        notas5++
+        valor-=5
+    }else{
+        notas1++
+        valor-=1
+    }
+
 }
 console.log("GC$ 50,00 ->", notas50);
 console.log("GC$ 10,00 ->", notas10);
 console.log("GC$ 5,00 ->", notas5);
 console.log("GC$ 1,00 ->", notas1);
+
 
 //-----------FOR2-----------
 
@@ -61,26 +68,23 @@ console.log("GC$ 1,00 ->", notas1);
 // let notas5 = 0;
 // let notas1 = 0;
 
-// for (; valor>0;){
-//     if(valor >=50){
-//         notas50++
-//         valor-=50
-//     }else if(valor >=10){
-//         notas10++
-//         valor-=10
-//     }else if(valor >=5){
-//         notas5++
-//         valor-=5
-//     }else{
-//         notas1++
-//         valor-=1
-//     }
-
+// for (; valor >= 50; valor -= 50) {
+//   notas50++;
+// }
+// for (; valor >= 10; valor -= 10) {
+//   notas10++;
+// }
+// for (; valor >= 5; valor -= 5) {
+//   notas5++;
+// }
+// for (; valor >= 1; valor -= 1) {
+//   notas1++;
 // }
 // console.log("GC$ 50,00 ->", notas50);
 // console.log("GC$ 10,00 ->", notas10);
 // console.log("GC$ 5,00 ->", notas5);
 // console.log("GC$ 1,00 ->", notas1);
+
 
 //-----------WHILE-----------
 
