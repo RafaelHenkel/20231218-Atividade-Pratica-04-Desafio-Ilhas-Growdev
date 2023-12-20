@@ -81,12 +81,12 @@ for (; valor > 0; ) {
   }
 }
 if (valor > 0) {
-  console.log("GC$ 50,00 ->", notas50);
-  console.log("GC$ 10,00 ->", notas10);
-  console.log("GC$ 5,00 ->", notas5);
-  console.log("GC$ 1,00 ->", notas1);
+  document.write(`GC$ 50,00 -> ${notas50}<br>`);
+  document.write(`GC$ 10,00 -> ${notas10}<br>`);
+  document.write(`GC$ 5,00 -> ${notas5}<br>`);
+  document.write(`GC$ 1,00 -> ${notas1}<br>`);
 } else {
-  console.log("Digite um valor positivo");
+  document.write("Digite um valor positivo");
 }
 
 //-----------FOR2-----------
