@@ -65,22 +65,22 @@ let notas10 = 0;
 let notas5 = 0;
 let notas1 = 0;
 
-for (; valor > 0; ) {
-  if (valor >= 50) {
-    notas50++;
-    valor -= 50;
-  } else if (valor >= 10) {
-    notas10++;
-    valor -= 10;
-  } else if (valor >= 5) {
-    notas5++;
-    valor -= 5;
-  } else {
-    notas1++;
-    valor -= 1;
-  }
-}
 if (valor > 0) {
+  for (; valor > 0; ) {
+    if (valor >= 50) {
+      notas50++;
+      valor -= 50;
+    } else if (valor >= 10) {
+      notas10++;
+      valor -= 10;
+    } else if (valor >= 5) {
+      notas5++;
+      valor -= 5;
+    } else {
+      notas1++;
+      valor -= 1;
+    }
+  }
   document.write(`GC$ 50,00 -> ${notas50}<br>`);
   document.write(`GC$ 10,00 -> ${notas10}<br>`);
   document.write(`GC$ 5,00 -> ${notas5}<br>`);
